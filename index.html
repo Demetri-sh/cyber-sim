@@ -1,1 +1,103 @@
-ds
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Open Day Simulation</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* Splash screen */
+    .splash {
+      height: 100vh;
+      background-color: #b22222;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-weight: bold;
+    }
+    .splash h1 {
+      font-size: 5vw;
+      margin: 0;
+    }
+    .splash p {
+      font-size: 1.5vw;
+    }
+
+    /* Main content */
+    .main {
+      min-height: 100vh;
+      background-color: #f0f0f0;
+      padding: 50px 20px;
+      text-align: center;
+      color: #111;
+    }
+    .main h2 {
+      font-size: 2.5em;
+      color: #0b9d58;
+    }
+    .main p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 20px auto;
+      line-height: 1.5em;
+    }
+    .main a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #0b9d58;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .main a:hover {
+      background-color: #097142;
+    }
+
+    .scroll-cue {
+      margin-top: 20px;
+      font-size: 1em;
+      color: rgba(255,255,255,0.8);
+      animation: bounce 1.5s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(10px); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Splash screen -->
+  <section class="splash">
+    <h1>YOU'VE BEEN HACKED!</h1>
+    <p>All your campus data is compromised</p>
+    <div class="scroll-cue">Scroll down to see details ⬇️</div>
+  </section>
+
+  <!-- Main content -->
+  <section class="main">
+    <h2>SIKE! This is a Cyber Open Day Invitation</h2>
+    <p>
+      This page is part of a <strong>fun simulation</strong> run by the Antonine University Cyber Society. 
+      No personal data was accessed. We just wanted to show how phishing emails might trick you and teach safe practices.
+    </p>
+    <p>
+      Join us at the Cyber Open Day and learn more about cybersecurity, demos, and activities!
+    </p>
+    <a href="YOUR_FORM_URL_HERE" target="_blank">RSVP for Cyber Open Day</a>
+  </section>
+
+</body>
+</html>
